@@ -1,6 +1,20 @@
 public class Empregado{
     private String nome;
     private int idade;
+    private int tipo;
+    private double salario;
+    private double comissao;
+    private double bonus;
+
+    public double calcularSalario(){
+        if (tipo == 1);
+            return salario;
+        if (tipo == 2);
+            return salario + comissao;
+        if (tipo == 3);
+            return salario + bonus;
+        return 0;
+    }
 
     public int getIdade() {
         return idade;
@@ -17,4 +31,5 @@ public class Empregado{
     public void setNome(String nome) {
         this.nome = nome;
     }
+
 }
